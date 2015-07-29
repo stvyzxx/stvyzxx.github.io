@@ -388,9 +388,9 @@ section{
         li{
             ul{
                 padding-top: 25px;
-                
+                font-size: 1.1em;
                 strong{
-                    font-size: 1.1em;
+                    font-size: 1.2em;
                 }
             }            
         }
@@ -398,7 +398,7 @@ section{
     }
     
     strong{
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: bold;
         color: $d_gray;
     }
@@ -556,6 +556,7 @@ aside.contacts{
             }
             
             textarea{
+                width: 90%;
                 background: $d_purple;
                 border: 1px solid $purple;
                 color: $l_gray;

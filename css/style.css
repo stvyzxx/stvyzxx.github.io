@@ -457,12 +457,13 @@ section {
 }
 #skillz > ul li ul {
   padding-top: 25px;
-}
-#skillz > ul li ul strong {
   font-size: 1.1em;
 }
+#skillz > ul li ul strong {
+  font-size: 1.2em;
+}
 #skillz strong {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #191919;
 }
@@ -610,6 +611,7 @@ aside.contacts .contacts-form form input:-ms-input-placeholder {
   opacity: 0.9;
 }
 aside.contacts .contacts-form form textarea {
+  width: 90%;
   background: #261933;
   border: 1px solid #7333b2;
   color: #E5E5E5;
