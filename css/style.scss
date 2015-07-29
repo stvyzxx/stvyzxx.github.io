@@ -15,6 +15,7 @@ body, html {
 }
 
 body{
+    min-height: 500px;
     font: 1em $p_font;
     font-family: $p_font;
     background: $l_gray;
@@ -154,7 +155,7 @@ aside.sidebar{
         width:100%;
 
         ul{
-
+            margin-top: 20px;
             text-align: center;
             li{
                 display: inline-block;
@@ -189,6 +190,7 @@ aside.sidebar{
 main{
     min-height: 100%;  
     max-width: 2560px;
+    min-width: 320px;
     overflow: hidden;
 }
 
@@ -227,7 +229,7 @@ section{
 
     p{  
         width: 65%; /* 1240/700 */
-        min-width: 360px;
+        min-width: 280px;
         padding: 25px 0 0 20px;
         font-size: 1em;
         line-height: 1.5;
@@ -235,15 +237,13 @@ section{
 }
 
 /* works */
-
 #works{
 
     .work-box{
         position: relative;
         margin: 40px 5% 140px 80px;
         max-width: 750px;
-        min-width: 400px;  
-        min-height: 200px;
+        min-width: 320px;  
         overflow: hidden;
         &:not(:last-child)::after{
                 content: "";
@@ -322,8 +322,6 @@ section{
                         width: 50%;
                         padding-right: 5%; 
                         float:left;
-
-
                     }
 
                     .description-features{
@@ -390,7 +388,7 @@ section{
                 padding-top: 25px;
                 
                 strong{
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                 }
             }            
         }
@@ -398,7 +396,7 @@ section{
     }
     
     strong{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     
     .skill-indicator{
@@ -459,7 +457,7 @@ aside.contacts{
     top:0;
     right:0;
     bottom:0;
-    min-width: 360px;
+    min-width: 320px;
     width:  27.777777777% ; /* 400/1440 */
     padding: 0 0 0 1.5%; /* 20/500 */
     background: $d_gray;

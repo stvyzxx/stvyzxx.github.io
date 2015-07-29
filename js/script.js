@@ -11,6 +11,7 @@
         $(".mobile-menu").on("click", onHeaderBurgerClick);
         $(".scrollable").on( 'mousewheel', bodyScrollConfine);
         $(".container").load("pages/about.html",onLoadHTML);
+        $(".arrow-up").on("click", onArrowUpClick);
 
         
         /* navigation hover*/
@@ -118,7 +119,7 @@
     function toggleContacts(){
         $(".contacts").toggleClass("contacts-toggle");
         $(".contacts-link").toggleClass("contacts-hover-link");
-
+        onWinResize();
         setTimeout(function(){
             $(".contacts .scroll-fix").scrollTop(0);// returns position of .scroll-fix
         },500);
@@ -175,8 +176,7 @@
             return false;
         }else if(winWidth < 640){
             $(".mobile-header").css("position", "absolute");
-            return false;
-        };
+        };  
         if(winHeight <= 620){
             $(".sidebar .scroll-fix").css({
                 "overflow-y" : "scroll",
@@ -189,6 +189,11 @@
                 "overflow-x" : "hidden",
                 "height"     : winHeight + "px"
             });
+            if(winWidth < 640){ //delete y-scroll because mobile menu does not need it
+               $(".sidebar .scroll-fix").css({
+                    "overflow-y" : "hidden"
+                }); 
+            }
         }else if(winHeight > 620){
             $(".scroll-fix").css({
                 "overflow-y" : "hidden"
@@ -227,6 +232,11 @@
                 "top" : "0"
              })   
         }    
+    }
+
+    function onArrowUpClick(){
+       $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
     }
 
 })(jQuery)

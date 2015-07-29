@@ -127,6 +127,7 @@ body, html {
 }
 
 body {
+  min-height: 500px;
   font: 1em Verdana, Geneva, sans-serif;
   font-family: Verdana, Geneva, sans-serif;
   background: #E5E5E5;
@@ -254,6 +255,7 @@ aside.sidebar footer {
   width: 100%;
 }
 aside.sidebar footer ul {
+  margin-top: 20px;
   text-align: center;
 }
 aside.sidebar footer ul li {
@@ -281,6 +283,7 @@ aside.sidebar footer .footer-copyright {
 main {
   min-height: 100%;
   max-width: 2560px;
+  min-width: 320px;
   overflow: hidden;
 }
 
@@ -313,7 +316,7 @@ section {
 #about p {
   width: 65%;
   /* 1240/700 */
-  min-width: 360px;
+  min-width: 280px;
   padding: 25px 0 0 20px;
   font-size: 1em;
   line-height: 1.5;
@@ -324,8 +327,7 @@ section {
   position: relative;
   margin: 40px 5% 140px 80px;
   max-width: 750px;
-  min-width: 400px;
-  min-height: 200px;
+  min-width: 320px;
   overflow: hidden;
   /* cover */
   /* button */
@@ -455,10 +457,10 @@ section {
   padding-top: 25px;
 }
 #skillz > ul li ul strong {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 #skillz strong {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 #skillz .skill-indicator {
   width: 50%;
@@ -519,7 +521,7 @@ aside.contacts {
   top: 0;
   right: 0;
   bottom: 0;
-  min-width: 360px;
+  min-width: 320px;
   width: 27.77778%;
   /* 400/1440 */
   padding: 0 0 0 1.5%;
