@@ -560,8 +560,13 @@
 @media screen and (max-width: 400px) {
   /* sidebar */
   aside.sidebar .nav-list .contacts-link .left, aside.sidebar .nav-list .contacts-link .right {
-    right: 60%;
-    top: 0;
+    right: 30%;
+  }
+  aside.sidebar .nav-list .contacts-link .left {
+    top: 26px;
+  }
+  aside.sidebar .nav-list .contacts-link .right {
+    top: 42px;
   }
 
   #skillz > ul, #about p {

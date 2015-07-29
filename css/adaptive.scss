@@ -520,8 +520,15 @@
         .nav-list{      
             .contacts-link{               
                 .left, .right{
-                  right: 60%;
-                    top: 0;
+                  right: 30%;  
+                }
+                
+                .left{
+                    top: 26px;
+                }
+
+                .right{
+                    top: 42px;
                 }
             }
         }
