@@ -1,0 +1,494 @@
+@import "settings"; /* settings file - colors, extends */
+
+/* extends */
+.sidebar-show{
+    transform: translateX(0) !important;
+    transition: all ease-out .5s;
+}
+
+
+/*----------- <960px -------------*/
+@media screen and (max-width: 960px) {
+  
+    section{
+        margin-left: 15%;/* 200/1440 */
+    }
+    
+    .container{
+
+         h2{
+
+            span{
+                left: -80%;
+                width: 80%;
+
+            }       
+        }
+    }
+    
+    #about{
+        p{
+            width: 90%;
+        }
+    }
+    
+    #works{
+
+        .work-box{
+            margin: 40px 5% 100px 30px;
+
+            .work-box-cover{
+                .work-box-description{
+                    top: 40% !important;
+                    font-size: .9em;
+                    h6{
+                        font-size: 1.7em;
+                    }
+
+                    .description-wrap{
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .work-box-link{
+                bottom: 5%;
+            }
+        }
+    }
+
+    #skillz{
+        .skill-indicator{
+            width: 70%;
+        }
+    }
+}
+
+/*----------- <800px -------------*/
+@media screen and (max-width: 800px) {
+    section{
+        width: 96%;
+        padding: 150px 0 70px 5%;/* 200/1440 */ 
+        margin: 0 auto;/* 200/1440 */
+        overflow: hidden !important;
+    }
+    
+    main{
+       // background: pink;
+    }
+
+    .container{
+         h2{
+            span{
+                left: -70% !important;
+                width: 70% !important;
+            }       
+        }
+    }
+    
+    /* mobile menu */
+    .mobile-header{
+        display: block;
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        top: 0;
+        border-bottom: 1px solid $d_purple;
+        border-top: 1px solid $d_purple;
+        color: $purple;
+        text-align: center;
+        background: url("../images/background_img.jpg");
+        transition: all ease-in-out .4s;
+        z-index: 2000;
+        
+        /* burger icon */
+        .mobile-menu{
+            position:fixed;
+            top: 40px;
+            left: 10px;
+            width: 40px;
+            height: 26px;
+            transform: translateY(-50%);
+            transition: all ease .4s;
+            .left,.right{
+                content:"";
+                position: absolute;
+                left: 0;
+                background: $purple;
+                height: 2px;
+                width: 40px;
+                transition: all .3s;
+            }
+            
+            .left{
+                top: 0;
+                box-shadow: $purple 0 12px 0 0;
+            }
+            
+            .right{
+                top: 24px;
+            }
+            
+            &:hover{
+                cursor: pointer;
+                
+                .left, .right{
+                    background: $l_gray;
+                }
+                
+                .left{
+                    box-shadow: $l_gray 0 12px 0 0;
+                }
+            }
+          
+        }
+        
+        /* burger icon animation */
+        .mobile-menu-hover-link{
+            color: $l_gray;
+            .left, .right{
+                top: 12px;
+                background: $l_gray;
+                
+                &::before{
+                    content:"";
+                    display: block;            
+                    width: 0;
+                    height: 2px;
+                    background: $l_purple;
+                }
+            }
+            
+            .left{
+                box-shadow: transparent 0 0 0 0 !important;
+                transform: rotate(225deg);
+                &::before{
+                    transition: width ease-in .3s;
+                }
+            }
+            
+            .right{
+                transform: rotate(315deg);
+                &::before{
+                    transition: width ease-out .4s;
+                }
+            }
+            
+            &:hover{
+                .left, .right{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+        /* logo */
+        h1{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img{
+                display: block;
+            }
+        }
+
+        footer{
+            position: absolute;
+            right: 0;
+            height: 80px;
+            width:40%;
+            ul{
+                position: absolute;
+                right: 20px;
+                top: 0;
+                text-align: center;
+                li{
+                    display: inline-block;
+
+                    .fa{
+                        padding: 0 15px;
+                        color: $l_purple;
+                        font-size: 1.3em;
+                        text-align: center;
+                        &:hover{
+                            color: $l_gray;
+                        }
+                    }
+                }
+            }
+                
+            .footer-copyright{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                padding: 0 15px;
+                color: $l_gray;
+                font-size: 12px;
+                text-align: center;
+                font: 1em Attentica, $p_font;
+                transform: translateX;
+                letter-spacing: 2px;
+            }      
+        }
+    }
+    /* end of mobile header */
+    /*---------------------*/
+    
+
+    /* sidebar menu*/
+    aside.sidebar{
+        width: 170px;
+        transform: translateX(-100%);/* appears on burger icon click */
+        transition: all ease-out .5s;
+        p{
+
+        }
+        
+        .scroll-fix{
+            position: relative;
+        }
+
+        h1{
+            display: none;
+        }
+        
+        .nav-list{
+            margin-top: 130px;
+            font: 2.3em Attentica, $p_font;
+            
+            .contacts-link{
+                .left, .right{
+                  right: 6%;  
+                }
+            }
+        }
+
+        footer{
+            display: none;
+        }
+    }    
+    
+    
+    /* about */
+    #about{
+        p{  
+            width: 85%; /* 1240/700 */
+            min-width: 360px;
+            padding: 25px 0 0 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    }
+    
+    /* works */
+    #works{
+
+        .work-box{
+            margin: 40px 5% 100px 30px;
+
+            .work-box-cover{
+                .work-box-description{
+                    h6{  
+                    font-size: 1.7em;
+                    }
+                    .description-wrap{
+                        margin-top: 20px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+
+            .work-box-link{
+                bottom: 10%;
+            }
+        }
+    }
+    
+    /* skillz */
+    #skillz{
+        .skill-indicator{
+            width: 70%;
+        }
+    }
+    
+    /* contacts */
+    aside.contacts{
+        z-index: 2222;
+    }
+}
+
+/*----------- <640px -------------*/
+@media screen and (max-width: 640px) {
+    main{
+        background: lighten(orangered, 20%);
+        position: relative;
+    }
+    
+    /* mobile menu */
+    .mobile-header{
+        height: 100px;
+        border: 4px solid $d_purple;
+        .mobile-menu{
+            display: none;
+        }
+        
+        footer{
+            height: 100px;
+            width:50%;
+            ul{
+                right: 20px;
+                top: 5px;
+            }
+                
+            .footer-copyright{
+                display: none;
+            }      
+        }
+    }
+     
+    /* sidebar */
+    aside.sidebar{
+        position: absolute;
+        top:80px;
+        left: 0;
+        right: 0;
+        height: 250px;
+        width: 100%;
+        min-height: 0;
+        max-width: 100%;
+        transform: translateX(0);
+        .scroll-fix{
+            position: static;
+            width: 100%;
+        }
+        
+        .nav-list{
+            margin-top: 20px;
+            
+            .contacts-link{
+                width: 100%;
+                margin: 10px auto 0;
+                
+                .left, .right{
+                  right: 35%;  
+                }
+            }
+        }
+    }
+  
+    
+    .container{
+        h2{
+            margin-left: 5%;
+            span{
+                left: -90% !important;
+                width: 90% !important;
+            }  
+        }
+        
+        h3{
+            margin-left: 5%;
+        }
+    }
+    section{
+        width: 100%;
+        padding: 400px 0 70px 0;/* 200/1440 */
+        margin: 0 auto 200px;
+    }
+    
+    #works{
+         .work-box{
+           margin: 60px 0 0;
+        } 
+    }
+    
+    #skillz > ul, #about p{
+        margin-left: 7%;
+    }
+    
+        /* skillz */
+    #skillz{
+        .skill-indicator{
+            width: 95%;
+        }
+    }
+    
+    /* contacts */
+    aside.contacts{
+        width: 100%;
+    }
+
+
+    /* mobile footer */
+    .mobile-footer{
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        background: $d_gray;
+        
+        .arrow-up{
+            float: left;
+            margin: 20px 0 0 5%;
+            & > * {
+                vertical-align:middle; 
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            i{
+                display: inline-block;
+                padding: 0;
+                text-align: center;
+                font-size: 1.5em;
+                color: $l_gray;
+            }
+
+            .arrow-label{
+                display: inline-block;
+                color: $l_purple;
+                padding-left: 5px;
+                font-family: Attentica;
+                font-size: 2.6em;
+                transition: all ease .4s;
+            } 
+        }
+
+        ul{ 
+            float: right;
+            margin: 10px 5% 0 0;
+            text-align: center;
+            li{
+                display: inline-block;
+
+                .fa{
+                    padding: 0 20px;
+                    color: $l_purple;
+                    font-size: 1.7em;
+                    text-align: center;
+                    transition: all ease .4s;
+                    &:hover{
+                        color: $l_gray;
+                    }
+                }
+            }
+        }
+
+
+        .footer-copyright{
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            clear: both;
+            color: $l_gray;
+
+        }
+    }
+}
