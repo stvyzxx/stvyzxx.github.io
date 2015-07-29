@@ -562,12 +562,6 @@
   aside.sidebar .nav-list .contacts-link .left, aside.sidebar .nav-list .contacts-link .right {
     right: 30%;
   }
-  aside.sidebar .nav-list .contacts-link .left {
-    top: 20px;
-  }
-  aside.sidebar .nav-list .contacts-link .right {
-    top: 36px;
-  }
 
   #skillz > ul, #about p {
     margin-left: 2%;
