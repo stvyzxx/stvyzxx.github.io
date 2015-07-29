@@ -320,6 +320,7 @@ section {
   padding: 25px 0 0 20px;
   font-size: 1em;
   line-height: 1.5;
+  color: #191919;
 }
 
 /* works */
@@ -451,6 +452,7 @@ section {
 
 /* skillz */
 #skillz > ul {
+  color: #191919;
   padding-left: 20px;
 }
 #skillz > ul li ul {
@@ -460,7 +462,9 @@ section {
   font-size: 1.1em;
 }
 #skillz strong {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #191919;
 }
 #skillz .skill-indicator {
   width: 50%;
