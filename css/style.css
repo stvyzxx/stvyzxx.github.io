@@ -203,14 +203,15 @@ aside.sidebar .nav-list li {
   height: 50px;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
+  line-height: 100%;
 }
 aside.sidebar .nav-list li a {
   display: block;
   height: 48px;
-  line-height: 100%;
   text-transform: uppercase;
   text-align: center;
   color: #7333b2;
+  background: pink;
 }
 aside.sidebar .nav-list li a:hover {
   color: #E5E5E5;

@@ -87,13 +87,14 @@ aside.sidebar{
             height: 50px;
             border-bottom: 1px solid transparent;
             border-top: 1px solid transparent;
+            line-height: 100%;
             a{  
                 display: block;
                 height: 48px;
-                line-height: 100%;
                 text-transform: uppercase;
                 text-align: center;
                 color: $purple;
+                background: pink;
                 @extend .transition;
                 &:hover{
                     color: $l_gray;
