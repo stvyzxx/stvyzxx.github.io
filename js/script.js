@@ -13,7 +13,14 @@
         $(".container").load("pages/about.html",onLoadHTML);
         $(".arrow-up").on("click", onArrowUpClick);
 
-        
+        /* IOS fixes */
+        function iosFix(){
+            var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
+            alert("yes");
+            if(iOS)$("main").css("display", "none");
+            
+        }
+        iosFix();
         /* navigation hover*/
         $(".nav-list a").click(function(){
             var parent =  $(this).parent();
