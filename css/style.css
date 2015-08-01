@@ -206,8 +206,8 @@ aside.sidebar .nav-list li {
 }
 aside.sidebar .nav-list li a {
   display: block;
-  line-height: 48px;
-  height: 48px;
+  line-height: 50px;
+  height: 50px;
   text-transform: uppercase;
   text-align: center;
   color: #7333b2;
