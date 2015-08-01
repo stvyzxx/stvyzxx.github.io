@@ -181,7 +181,7 @@ aside.sidebar{
         }
             
         .footer-copyright{
-            margin-top: 50px;
+            margin-top: 40px;
             color: $l_gray;
             font-size: 12px;
             text-align: center;
@@ -211,7 +211,7 @@ section{
 
 
 .container{
-    
+    min-width: 320px;
      h2{
         position: relative;
         padding-bottom: 5px;
@@ -572,6 +572,7 @@ aside.contacts{
                 padding: 8px;
                 resize: none;
                 font-family: $p_font;
+                overflow: auto;
                 @extend .transition;
                 
                 &:focus{

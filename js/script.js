@@ -17,7 +17,7 @@
         function iosFix(){
             var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
             if(iOS){
-                $(".nav-list a").css("line-height", "56px");
+                $(".nav-list a").css("line-height", "57px");
                 $(".contacts input[type='submit']").css("line-height", "48px");
             }
         }
