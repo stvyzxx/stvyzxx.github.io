@@ -635,7 +635,7 @@ aside.contacts .contacts-form form input[type="submit"] {
   width: 90px;
   height: 40px;
   margin: 20px 0;
-  line-height: 40px;
+  line-height: 1;
   background: #7333b2;
   border: none;
   outline: none;
