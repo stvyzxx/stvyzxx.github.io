@@ -14,14 +14,8 @@
         $(".arrow-up").on("click", onArrowUpClick);
 
         /* IOS fixes */
-        function iosFix(){
-            var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
-            if(iOS){
-                $(".nav-list a").css("line-height", "57px");
-                $(".contacts input[type='submit']").css("line-height", "48px");
-            }
-        }
         iosFix();
+        
         /* navigation hover*/
         $(".nav-list a").click(function(){
             var parent =  $(this).parent();
@@ -246,6 +240,15 @@
        $("html, body").animate({ scrollTop: 0 }, 600);
             return false;
     }
+    
+    function iosFix(){
+        var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
+        if(iOS){
+            $(".nav-list a").css("line-height", "57px");
+            $(".contacts input[type='submit']").css("line-height", "48px");
+        }
+    }
+        
 
 })(jQuery)
 

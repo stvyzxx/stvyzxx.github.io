@@ -493,13 +493,9 @@
 
   /* mobile footer */
   .mobile-footer {
-    position: absolute;
     display: block;
+    position: relative;
     bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 100%;
     height: 150px;
     background: #191919;
     z-index: 1000;

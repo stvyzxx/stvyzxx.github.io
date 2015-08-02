@@ -288,6 +288,7 @@ aside.sidebar footer .footer-copyright {
 
 /* main */
 main {
+  position: relative;
   min-height: 100%;
   max-width: 2560px;
   min-width: 320px;
@@ -465,12 +466,16 @@ section {
   color: #191919;
   padding-left: 20px;
 }
-#skillz > ul li ul {
-  padding-top: 25px;
-  font-size: 1.1em;
+#skillz > ul ul > li {
+  padding-top: 15px;
 }
-#skillz > ul li ul strong {
-  font-size: 1.2em;
+#skillz > ul li strong, #skillz > ul li i {
+  font-family: Attentica;
+  font-size: 2em;
+}
+#skillz > ul li i {
+  font-style: italic;
+  font-size: 1.9em;
 }
 #skillz strong {
   font-size: 1.4em;
@@ -489,6 +494,7 @@ section {
   position: relative;
   height: 10px;
   width: 0;
+  /* background: $purple;*/
   background: -webkit-linear-gradient(left, #261933, #b27fe6);
   background: linear-gradient(to right, #261933, #b27fe6);
   -webkit-transition: all ease-out .9s;
@@ -656,4 +662,10 @@ aside.contacts .contacts-form form input[type="submit"]:hover {
 .mobile-footer {
   display: none;
   font-family: Verdana, Geneva, sans-serif;
+}
+
+/* modernizr fixes */
+.no-cssgradients .skill-indicator .indicator-bar {
+  background-image: url(../images/progress-ie-gradient.svg);
+  background-size: cover;
 }

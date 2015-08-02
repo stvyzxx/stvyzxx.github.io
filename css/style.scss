@@ -195,6 +195,7 @@ aside.sidebar{
 /* main */
 
 main{
+    position: relative;
     min-height: 100%;  
     max-width: 2560px;
     min-width: 320px;
@@ -392,14 +393,21 @@ section{
     >ul{
         color: $d_gray;
         padding-left: 20px;
-        li{
-            ul{
-                padding-top: 25px;
-                font-size: 1.1em;
-                strong{
-                    font-size: 1.2em;
-                }
+
+        ul{
+            >li{
+                padding-top: 15px;
             }            
+        }
+        
+        li strong, li i{
+            font-family: Attentica;
+            font-size: 2em;
+        }
+        
+        li i{
+            font-style: italic;
+            font-size: 1.9em;
         }
     
     }
@@ -422,6 +430,7 @@ section{
             position: relative;
             height: 10px;
             width: 0;
+           /* background: $purple;*/
             background: linear-gradient(to right, $d_purple, $l_purple);
             transition: all ease-out .9s;
             
@@ -610,6 +619,17 @@ aside.contacts{
 
 }
 
+
+/* modernizr fixes */
+.no-cssgradients{
+     .skill-indicator{
+        
+        .indicator-bar{
+            background-image: url(../images/progress-ie-gradient.svg);
+            background-size: cover;        
+        }
+     }
+}
 
 
 
