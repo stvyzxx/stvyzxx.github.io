@@ -328,10 +328,11 @@ section {
   width: 65%;
   /* 1240/700 */
   min-width: 280px;
-  padding: 25px 0 0 20px;
+  padding: 25px 0 0 0;
   font-size: 1em;
   line-height: 1.5;
   color: #191919;
+  text-indent: 20px;
 }
 
 /* works */
