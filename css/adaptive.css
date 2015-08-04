@@ -80,7 +80,7 @@
 /* close icon animation */
 .close-icon-animation .left, .close-icon-animation .right {
   position: absolute;
-  top: 15px;
+  top: 16px;
   width: 35px;
   height: 2px;
   background: #E5E5E5;
