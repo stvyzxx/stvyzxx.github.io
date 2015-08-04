@@ -36,7 +36,7 @@
             $(".container").fadeOut(300);
             /* pages loading */
             setTimeout(function(){
-                $(".container").load("pages/"+ data_id +".html", onLoadHTML).fadeIn(300);
+                $(".container").load("pages/"+ data_id +".html", onLoadHTML);
 
             },300);
             
@@ -48,7 +48,7 @@
         /* Animation when html file is loaded */
         function onLoadHTML(){
             var self = $(this);
-            
+            $(".container").fadeIn(300)
             // animation on scroll
             descriptionAnimation();
             $(window).scrollTop(0);
