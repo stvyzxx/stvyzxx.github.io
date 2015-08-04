@@ -1,5 +1,6 @@
 /node_modules
 /bower_components
-/.sass-cache
+css/.sass-cache/*
+css/*.map
 package.json
 gulpfile.js
