@@ -104,7 +104,7 @@
             if(target.hasClass("work-box-link")){
                 cover.css("opacity", "1");
             };
-        });
+        });       
 
     });
     
