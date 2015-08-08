@@ -614,6 +614,18 @@ aside.contacts{
     }
 }
 
+// message block for old browsers
+.oldBrowsers{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
 /* mobile-footer */
 .mobile-footer{
     display: none;
@@ -631,6 +643,16 @@ aside.contacts{
             background-size: cover;        
         }
      }
+}
+
+.no-svg{
+    aside.sidebar, aside.contacts{
+        display : none;
+    }
+    
+    .oldBrowsers{
+        display: block;
+    }
 }
 
 
