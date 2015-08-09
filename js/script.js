@@ -48,12 +48,15 @@
         /* Animation when html file is loaded */
         function onLoadHTML(){
             var self = $(this);
-            $(".container").fadeIn(300)
+            $(".container").fadeIn(300);
             // animation on scroll
             descriptionAnimation();
             $(window).scrollTop(0);
             $(".mobile-header").css("top", 0);//shows header on load
+            
+            //problem is here, changes color of links in nav on click!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             setTimeout(function(){
+                
                 self.find("h2 span").addClass("moveFromLeft");
 
                 // skillz box animation
