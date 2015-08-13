@@ -54,7 +54,7 @@
             $(window).scrollTop(0);
             $(".mobile-header").css("top", 0);//shows header on load
             
-            //problem here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //problem is here, changes color of links in nav on click!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             setTimeout(function(){
                 
                 self.find("h2 span").addClass("moveFromLeft");
