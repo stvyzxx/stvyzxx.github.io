@@ -24,27 +24,31 @@
 </head>
 
 <body>
+ 
+  <!-- mobile header  -->
   <header class="mobile-header">
     <div class="mobile-menu">
       <div class="right"></div>
       <div class="left"></div>
     </div>
     <h1>
-      <a href="#"><img src="images/logo.svg" width="50" height="50" alt=""></a>
+      <a href="#"><img src="images/logo.svg" width="50" height="50" alt="logo"></a>
     </h1>
 
-    <footer>
+    <div class="header-footer">
       <ul>
         <li><a href="#"><i class="fa hvr-icon-pulse-grow fa-facebook"></i></a></li>
         <li><a href="#"><i class="fa hvr-icon-pulse-grow fa-envelope"></i></a></li>
       </ul>
 
       <div class="footer-copyright">
-        <span>&copy; 2015 stvyzxx.io</span>   
+        <span>stvyzxx.github.io</span>   
       </div>
-    </footer>       
+    </div>       
       
   </header>
+  
+  <!-- sidebar -->
   <aside class="sidebar">
     <div class="scroll-fix scrollable">
        <h1 class="logo">
@@ -65,15 +69,15 @@
            </ul>
        </nav>
     </div>   
-       <footer>
+       <div class="header-footer">
            <ul>
                <li><a href="#"><i class="fa hvr-icon-pulse-grow fa-facebook"></i></a></li>
                <li><a href="#"><i class="fa hvr-icon-pulse-grow fa-envelope"></i></a></li>
            </ul>
            <div class="footer-copyright">
-        <span>&copy; 2015 stvyzxx.io</span>   
+        <span>&copy; 2015 stvyzxx.github.io</span>   
            </div>            
-       </footer> 
+       </div> 
              
   </aside>
 
@@ -105,11 +109,11 @@
                  <form action="//formspree.io/yurasobechko@gmail.com"
                       method="POST">
                     <label for="name">NAME</label>  
-                    <input type="text" placeholder="your name" name="name">
-                    <label for="_replyto">MAIL</label> 
-                    <input type="email" placeholder="your mail" name="_replyto">
-                     <label for="_replyto">MESSAGE</label> 
-                    <textarea placeholder="message..." name="message" id="" rows="5"></textarea>
+                    <input type="text" placeholder="your name" id="name" name="name">
+                    <label for="replyto">MAIL</label> 
+                    <input type="email" placeholder="your mail" id="replyto" name="_replyto">
+                     <label for="message">MESSAGE</label> 
+                    <textarea placeholder="message..." id="message" name="message" rows="5"></textarea>
                     <input type="submit"  value="SEND">
                 </form>
               </div> 
