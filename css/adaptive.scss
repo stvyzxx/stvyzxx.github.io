@@ -354,6 +354,20 @@
         }
     }
      
+    
+    .header-footer{
+
+        .footer-copyright{
+            position: absolute;
+            top: 65px;
+            right: 5px;
+            width: 120px;
+            color: $l_gray;
+            span{
+                font: 1.3em Attentica, $p_font;
+            }
+        }      
+    }
     /* sidebar */
     aside.sidebar{
         position: absolute;
@@ -507,6 +521,7 @@
             margin-top: 40px;
             clear: both;
             color: $l_gray;
+            font: 1.3em Attentica, $p_font;
 
         }
     }
@@ -525,6 +540,7 @@
             }
         }
     }
+    
     
     #skillz > ul, #about p{
         margin-left: 2%;
