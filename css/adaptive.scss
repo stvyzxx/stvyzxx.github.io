@@ -352,22 +352,23 @@
                 display: none;
             }      
         }
+        
+         .header-footer{
+            .footer-copyright{
+                position: absolute;
+                top: 65px;
+                right: 15px;
+                width: 120px;
+                span{
+                    font: 1.3em Attentica, $p_font;
+                }
+            }      
+        }
     }
      
     
-    .header-footer{
-
-        .footer-copyright{
-            position: absolute;
-            top: 65px;
-            right: 5px;
-            width: 120px;
-            color: $l_gray;
-            span{
-                font: 1.3em Attentica, $p_font;
-            }
-        }      
-    }
+   
+    
     /* sidebar */
     aside.sidebar{
         position: absolute;
@@ -522,6 +523,7 @@
             clear: both;
             color: $l_gray;
             font: 1.3em Attentica, $p_font;
+            letter-spacing: 1px;
 
         }
     }
